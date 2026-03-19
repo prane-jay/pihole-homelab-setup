@@ -6,7 +6,9 @@ It is a network-wide advertisement and malicious domain blocking setup using Pi-
 ---
 
 ## Project Overview
-This project utilizes a Raspberry Pi 3 to block ads, trackers and malicious domains. Pi-hole sits on the local network and intercepts DNS queries from every connected device. Domains that are flagged in the blocklists (a collection of unwanted domains) are sinkholed before they reach the connected device. Unbound sits behind Pi-hole and recursively resolves all remaining queries, removing the reliance on ISP or third party DNS providers such as Google and Cloudflare. 
+This project utilizes a Raspberry Pi 3 to block ads, trackers and malicious domains. Pi-hole sits on the local network and intercepts DNS queries from every connected device. Domains that are flagged in the blocklists (a collection of unwanted domains) are sinkholed before they reach the connected device. Unbound sits behind Pi-hole and recursively resolves all remaining queries, removing the reliance on ISP or third party DNS providers such as Google and Cloudflare. The Pi-hole admin dashboard provides real-time visibility into network DNS activity, displaying metrics such as total queries processed, blocked domains, and traffic patterns across all connected devices. 
+
+![Pihole Admin Dashboard](./images/admin-dashboard.png)
 
 ---
 
@@ -29,15 +31,15 @@ This project utilizes a Raspberry Pi 3 to block ads, trackers and malicious doma
 
 Raspberry Pi OS Lite (32 bit) was flashed to a microSD card using the official Raspberry Pi Imager. SSH service was enabled with password authentication for headless access. 
 
-INSERT IMAGE
+![Raspberry Pi Imager](./images/raspberrypi-imager.png)                                ![Raspberry Pi Imager SSH Settings](./images/raspberrypi-imager-ssh.png)
 
 Inserted the microSD into the Raspberry Pi 3, then went into my ISP DHCP settings to reserve a static IP address so that it never changes on the network
 
-INSERT IMAGE 2
+![ISP DHCP Raspberry Pi Settings](./images/raspberrypi-dhcp-config.png)
 
 Used the username and password set in the imager to SSH into the Raspberry Pi to install Pi-hole using the official installation documentation: [https://docs.pi-hole.net/main/basic-install/](url)
 
-INSERT IMAGE 3
+![Pi-hole Completed Installation Page](./images/pihole-installation-complete.png) 
 
 Logged into Pi-hole admin dashboard and added additional blocklists with a publicly available collection: [https://firebog.net/](url)
 
