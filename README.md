@@ -53,7 +53,7 @@ By default, Pi-hole will forward unblocked DNS queries to an upstream provider s
 
 This was configured using the official documentation: [https://docs.pi-hole.net/guides/dns/unbound/](url)
 
-INSERT IMAGE 
+![Pihole Unbound as Custom DNS Upstream](./images/custom-dns.png)
 
 ---
 
