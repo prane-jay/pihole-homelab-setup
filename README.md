@@ -22,7 +22,7 @@ This project utilizes a Raspberry Pi 3 to block ads, trackers and malicious doma
 ## Features
 - Network-wide DNS filtering for advertisements, trackers, and malicious domains for all devices on network
 - Additional blocklists for specific threats beyond default
-- Utilizing Unbound as a local recursive resolver. This eliminates the need for upstream DNS providers, as queries are resolved directly from root servers.
+- Utilizing Unbound as a local recursive resolver. This eliminates the need for upstream DNS providers, as queries are resolved directly from root servers
 - Live dashboard for monitoring network DNS traffic
 
 ---
@@ -33,7 +33,7 @@ Raspberry Pi OS Lite (32 bit) was flashed to a microSD card using the official R
 
 ![Raspberry Pi Imager](./images/raspberrypi-imager.png)                                ![Raspberry Pi Imager SSH Settings](./images/raspberrypi-imager-ssh.png)
 
-Inserted the microSD into the Raspberry Pi 3, then went into my ISP DHCP settings to reserve a static IP address so that it never changes on the network
+Inserted the microSD into the Raspberry Pi 3 and powerd it on. On my ISP DHCP settings, a static IP address was reserved for the Raspberry Pi so that it never changes on the network.
 
 ![ISP DHCP Raspberry Pi Settings](./images/raspberrypi-dhcp-config.png)
 
@@ -63,4 +63,3 @@ This was configured using the official documentation: [https://docs.pi-hole.net/
 - Network configuration: DHCP management and assigning static IPs
 - DNS resolution: end-to-end process (recursive vs. iterative lookups, root, TLD, and authoritative servers)
 - DNS roles: difference between forwarding and recursive resolvers, including privacy implications
-
