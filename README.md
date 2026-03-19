@@ -43,7 +43,7 @@ Used the username and password set in the imager to SSH into the Raspberry Pi to
 
 Logged into Pi-hole admin dashboard and added additional blocklists with a publicly available collection: [https://firebog.net/](url)
 
-INSERT IMAGE 4
+![Pi-hole Blocklists](./images/pihole-blocklists.png) 
 
 ---
 
